@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 80px;
+    background: #000000;
+    position: sticky;
+    
+    
+    z-index: 999;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.titre {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    padding: 1rem;
+}
+.imagelogo{
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+
+/*quand l'ecrant est inf a 40 rem le header devien flex */
+@media (min-width:40rem){
+    .header{
+        display:flex;
+        padding: 10px 30px;
+    }
+    
+}

@@ -1,0 +1,31 @@
+.presentation {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin: 10px;
+}
+
+.presentation > div {
+    flex: 1;
+}
+
+.presentation > .image {
+    max-width: 100%;
+}
+
+
+@media(min-width: 60rem) {
+    
+    .presentation {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .presentation.inverse > div {
+        order: -1;
+    }
+}

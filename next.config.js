@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+//si jamais vous ajouter des photos de l'internet, pour raison de securite il faut ajouter ca au dessou
+export default {
+     images:{
+        domains: ['imag.pokemondb.net']
+     },
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
